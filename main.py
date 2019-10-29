@@ -44,6 +44,13 @@ void setArgs(int argc, char** argv) {
 
 """
 
+r = [][][] # número de alunos acima do limite de 60
+s_p = [][][] # número de alunos que ultrapassa capacidade da sala
+s_n = [][][] # número da capacidade que ultrapassa a demanda
+x = [][][] # alocação de turmas (1 ou 0)
+t = [] # número de salas diferentes que uma sala foi alocada
+v = [][] # alocação de disciplina em sala
+
 
 def set_funcoes_restricoes(model):
     for i in range(num_turmas):
