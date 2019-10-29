@@ -51,6 +51,18 @@ x = [][][] # alocação de turmas (1 ou 0)
 t = [] # número de salas diferentes que uma sala foi alocada
 v = [][] # alocação de disciplina em sala
 
+num_horarios = 14
+num_turmas = 0
+num_salas = 0
+
+salas = [] # pegar do banco
+demanda = [][]
+horarios = [] # pegar do banco
+
+param_ensalamentoID = [30]
+param_ano = [30]
+param_semestre = [30]
+
 
 def set_funcoes_restricoes(model):
     for i in range(num_turmas):
@@ -142,18 +154,6 @@ def set_funcao_objetivo(model):
 
 # Git de exemplo https://github.com/rocarvalho/ensalamento-interface-gurobi/blob/master/main.cpp
 model: Model = Model("InClass")
-
-num_horarios = 14
-num_turmas = 0
-num_salas = 0
-
-salas = []
-horarios = []
-
-param_ensalamentoID = [30]
-param_ano = [30]
-param_semestre = [30]
-
 
 url = 'vem aqui nossa api'
 
