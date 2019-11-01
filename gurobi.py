@@ -10,6 +10,7 @@ demanda_disciplina = [5, 10, 15, 9, 20, 17]
 horarios = [0, 1, 2, 3]
 salas = ['sala1', 'sala2', 'sala3', 'sala4']
 cadeiras = [20, 30, 40, 50]
+
 horario = ([0, 1, 0, 0],
            [1, 0, 1, 0],
            [0, 0, 1, 0],
