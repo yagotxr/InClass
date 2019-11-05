@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import gurobipy as grb
 from gurobipy import GRB
-from numpy import matrix
 
 model = grb.Model("model")
 
