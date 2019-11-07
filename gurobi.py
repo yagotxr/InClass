@@ -1,14 +1,34 @@
 # -*- coding: utf-8 -*-
 import gurobipy as grb
 from gurobipy import GRB
+from persistencia.inclass_database import *
 
 model = grb.Model("model")
 
-disciplinas = ['dis1', 'dis2', 'dis3', 'dis4', 'dis5', 'dis6']
+retorno_disciplinas = get_disciplinas()
+
+disciplinas = []
+
+for i in retorno_disciplinas:
+    disciplinas.append(str(i[0]))
+
+print(disciplinas)
+
 demanda_disciplina = [5, 10, 15, 9, 20, 17]
 horarios = [0, 1, 2, 3]
-salas = ['sala1', 'sala2', 'sala3', 'sala4']
-cadeiras = [20, 30, 40, 50]
+
+retorno_salas = get_salas()
+print(retorno_salas)
+cadeiras = []
+salas = []
+
+for i in retorno_salas:
+    salas.append(str(i[0]))
+    cadeiras.append(i[1])
+
+# salas = ['sala1', 'sala2', 'sala3', 'sala4']
+
+# cadeiras = [20, 30, 40, 50]
 
 horario = ([0, 1, 0, 0],
            [1, 0, 1, 0],
